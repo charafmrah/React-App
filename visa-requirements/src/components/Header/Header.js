@@ -1,29 +1,26 @@
 import React from 'react';
+import Option from './../Option/Option';
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg bg-light shadow p-3 mb-5 bg-white rounded">
+      <div className="container-fluid">
+        <h1 className="navbar-brand">Visa requirements for a passport from:</h1>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <form className="d-flex w-50 p-3" role="search">
+            <select className="form-select " aria-label="select a country">
+              <option defaultValue>Choose the country</option>
+              <Option value={1} text={'United States'} />
+              <Option value={1} text={'Algeria'} />
+              <Option value={1} text={'France'} />
+              <Option value={1} text={'Canada'} />
+            </select>
           </form>
+
         </div>
       </div>
     </nav>
