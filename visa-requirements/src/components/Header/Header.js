@@ -13,11 +13,7 @@ const Header = () => {
 
           <form className="d-flex w-50 p-3" role="search">
             <select className="form-select " aria-label="select a country">
-              <option defaultValue>Choose the country</option>
-              <Option value={1} text={'United States'} />
-              <Option value={1} text={'Algeria'} />
-              <Option value={1} text={'France'} />
-              <Option value={1} text={'Canada'} />
+              <Option values={['United States', 'Algeria', 'Canada']} />
             </select>
           </form>
 

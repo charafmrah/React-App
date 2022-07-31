@@ -9,3 +9,8 @@ option, .form-select {
     font-weight: 400;
     font-size: 18px;
 }
+
+.form-control:focus, select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+} 
